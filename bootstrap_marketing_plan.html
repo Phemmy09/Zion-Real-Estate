@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zion Real Estate & Services | Transatlantic 30-Day Marketing Plan</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-dark: #05080f;
+      --card-bg: rgba(16, 22, 38, 0.8);
+      --card-border: rgba(212, 175, 55, 0.14);
+      --accent-gold: #d4af37;
+      --accent-gold-grad: linear-gradient(135deg, #f59e0b, #d4af37);
+      --accent-teal: #14b8a6;
+      --accent-rose: #f43f5e;
+      --accent-blue: #3b82f6;
+      --text-primary: #f3f4f6;
+      --text-muted: #9ca3af;
+      --glow-gold: rgba(212, 175, 55, 0.15);
+      --glow-blue: rgba(59, 130, 246, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.65;
+      padding-bottom: 80px;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 10% 15%, rgba(212, 175, 55, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 90% 85%, rgba(59, 130, 246, 0.04) 0%, transparent 40%);
+    }
+
+    header {
+      padding: 90px 20px 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+    }
+
+    .brand-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .brand-title::before, .brand-title::after {
+      content: '';
+      width: 40px;
+      height: 1px;
+      background: var(--accent-gold);
+      display: inline-block;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      background: var(--accent-gold-grad);
+      color: #000;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+    }
+
+    header h1 {
+      font-size: 3.4rem;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #ffffff 40%, #fef3c7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .partnership-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .partner-tag {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 6px 16px;
+      border-radius: 8px;
+    }
+
+    .partner-tag strong {
+      color: var(--accent-gold);
+    }
+
+    /* Transatlantic Section Card */
+    .transatlantic-model {
+      background: linear-gradient(135deg, rgba(20, 27, 45, 0.9), rgba(10, 15, 30, 0.9));
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 24px;
+      padding: 40px;
+      margin-bottom: 50px;
+      position: relative;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .transatlantic-model h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .transatlantic-model h2 svg {
+      color: var(--accent-blue);
+    }
+
+    .transatlantic-model p {
+      color: var(--text-muted);
+      margin-bottom: 25px;
+      font-size: 1.05rem;
+    }
+
+    .model-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .model-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .model-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 16px;
+      transition: all 0.3s;
+    }
+
+    .model-card:hover {
+      border-color: var(--accent-blue);
+      background: rgba(59, 130, 246, 0.02);
+      box-shadow: 0 10px 25px var(--glow-blue);
+    }
+
+    .model-card h4 {
+      color: var(--accent-blue);
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .model-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* Roadmap Timeline styling */
+    .timeline-container {
+      margin: 40px 0 65px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .timeline-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .timeline-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .timeline-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--accent-gold-grad);
+      opacity: 0.8;
+    }
+
+    .timeline-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(212, 175, 55, 0.35);
+      box-shadow: 0 15px 35px var(--glow-gold);
+    }
+
+    .timeline-card.teal-top::before {
+      background: var(--accent-teal);
+    }
+    .timeline-card.teal-top:hover {
+      border-color: rgba(20, 184, 166, 0.3);
+      box-shadow: 0 15px 35px var(--glow-teal);
+    }
+
+    .card-week {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .timeline-card.teal-top .card-week {
+      color: var(--accent-teal);
+    }
+
+    .card-title {
+      font-size: 1.45rem;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .card-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Detail Sections Grid */
+    .section-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 35px;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 900px) {
+      .section-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+
+    .content-block {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 40px;
+      backdrop-filter: blur(12px);
+      position: relative;
+    }
+
+    .content-block h2 {
+      font-size: 1.9rem;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 16px;
+    }
+
+    .content-block h2 span {
+      background: var(--accent-gold-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .content-block h3 {
+      font-size: 1.35rem;
+      margin: 28px 0 14px;
+      color: #ffffff;
+      border-left: 3px solid var(--accent-gold);
+      padding-left: 12px;
+    }
+
+    ul.check-list {
+      list-style-type: none;
+      margin-bottom: 20px;
+    }
+
+    ul.check-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 16px;
+      color: var(--text-muted);
+    }
+
+    ul.check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent-gold);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .script-box {
+      background: rgba(10, 15, 26, 0.7);
+      border: 1px dashed rgba(212, 175, 55, 0.3);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+      position: relative;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .script-box blockquote {
+      color: #cbd5e1;
+      font-style: italic;
+      font-size: 0.95rem;
+      border-left: 3px solid var(--accent-gold);
+      padding-left: 15px;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: var(--accent-gold-grad);
+      color: #000;
+      border-color: transparent;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+    }
+
+    /* Checklist Sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .widget-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 30px;
+      backdrop-filter: blur(12px);
+    }
+
+    .widget-box h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .todo-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .todo-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    .todo-item input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(212, 175, 55, 0.4);
+      border-radius: 6px;
+      cursor: pointer;
+      display: grid;
+      place-content: center;
+      transition: 0.15s all ease-in-out;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .todo-item input[type="checkbox"]::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      box-shadow: inset 1em 1em var(--accent-gold);
+      transform-origin: center;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    }
+
+    .todo-item input[type="checkbox"]:checked {
+      border-color: var(--accent-gold);
+      background-color: rgba(212, 175, 55, 0.1);
+    }
+
+    .todo-item input[type="checkbox"]:checked::before {
+      transform: scale(1.2);
+    }
+
+    .todo-text {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .todo-item input[type="checkbox"]:checked ~ .todo-text {
+      color: rgba(255, 255, 255, 0.4);
+      text-decoration: line-through;
+    }
+
+    .progress-container {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 999px;
+      height: 8px;
+      width: 100%;
+      margin-bottom: 25px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: var(--accent-gold-grad);
+      transition: width 0.3s ease-out;
+    }
+
+    .progress-stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    /* Warning/Compliance box */
+    .compliance-box {
+      border-left: 4px solid var(--accent-rose);
+      background: rgba(244, 63, 94, 0.05);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .compliance-box h4 {
+      color: var(--accent-rose);
+      font-size: 1rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .compliance-box p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .flex-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-title">Zion Real Estate & Services</div>
+    <div class="badge">Transatlantic Sourcing Model</div>
+    <h1>30-Day Zero-Budget Marketing Plan</h1>
+    <p>A specialized remote-desk workflow designed to locate, contract, and assign distressed US real estate assets from Nigeria, leveraging local US-based partners for boots-on-the-ground support.</p>
+    
+    <div class="partnership-info">
+      <div class="partner-tag">Desk Lead (Nigeria): <strong>Israel O. Dare</strong></div>
+      <div class="partner-tag">Acquisitions / US Field: <strong>E.V. Emmanuel</strong></div>
+      <div class="partner-tag">Target Market: <strong>United States (USA)</strong></div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Transatlantic Operating Model Card -->
+    <section class="transatlantic-model">
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        Transatlantic Operations: Nigeria to United States
+      </h2>
+      <p>To successfully wholesaling and novating properties in the US while residing in Nigeria, we leverage digital workflow tools and strong remote-to-local partner collaboration protocols.</p>
+      
+      <div class="model-grid">
+        <div class="model-card">
+          <h4>1. Time Zone Management</h4>
+          <p>Nigeria (WAT, UTC+1) is 5 hours ahead of US Eastern Time (EST) and 8 hours ahead of Pacific Time (PST). Sourcing & dial/SMS outreach must run during US afternoon hours (usually <strong>3:00 PM to 10:00 PM WAT</strong>).</p>
+        </div>
+        <div class="model-card">
+          <h4>2. US Local Presence Stack</h4>
+          <p>We utilize US VOIP portals (like OpenPhone or Google Voice) to dial with US local area codes. We browse US municipal registries using VPNs to bypass geolocation access blocks.</p>
+        </div>
+        <div class="model-card">
+          <h4>3. Partner Hand-Off</h4>
+          <p>Remote Sourcing (Nigeria) extracts the list and initiates contracts virtually (DocuSign). Local Partners (USA) act as the physical presence for inspections, video captures, and walkthroughs.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Timeline Overview -->
+    <section class="timeline-container">
+      <div class="timeline-card">
+        <div class="card-week">Week 01</div>
+        <h3 class="card-title">Virtual Sourcing</h3>
+        <p class="card-desc">Sift US county default databases via VPN. Skip-trace and map billing addresses to locate owners.</p>
+      </div>
+      <div class="timeline-card">
+        <div class="card-week">Week 02</div>
+        <h3 class="card-title">Savior Outreach</h3>
+        <p class="card-desc">Initiate calls/texts via US VOIP lines during US business hours. Deploy the credit rescue script.</p>
+      </div>
+      <div class="timeline-card teal-top">
+        <div class="card-week">Week 03</div>
+        <h3 class="card-title">Pre-Selling & MP</h3>
+        <p class="card-desc">Syndicate deals on Facebook Marketplace and US investor groups. Capture cash buyers virtually.</p>
+      </div>
+      <div class="timeline-card teal-top">
+        <div class="card-week">Week 04</div>
+        <h3 class="card-title">US Escrow Close</h3>
+        <p class="card-desc">US partners host the walkthrough. Sign assignment documents remotely, close with US title companies.</p>
+      </div>
+    </section>
+
+    <!-- Content Sections and Sidebar -->
+    <div class="section-grid">
+      
+      <!-- Main Detailed Text -->
+      <div class="main-content">
+        
+        <!-- Week 1 Content -->
+        <div class="content-block" id="week1">
+          <h2><span>Week 1</span> Sourcing & US Mind Mapping</h2>
+          <p class="card-desc" style="margin-bottom: 20px;">Remote desk team (Nigeria) builds databases of distressed US assets using public registers. Local target markets in the US should align with where US partners operate.</p>
+          
+          <h3>1. Sourcing US Registries (Lis Pendens / Tax Liens)</h3>
+          <ul class="check-list">
+            <li><strong>US County Registries:</strong> Browse target county clerk websites (e.g., in Texas, Florida, Georgia) using a US VPN. </li>
+            <li><strong>Lis Pendens / Default Lists:</strong> Extract property owners who have missed 3+ mortgage payments.</li>
+            <li><strong>Tax Auction Rolls:</strong> Pull delinquent list files from the local county tax assessor website.</li>
+          </ul>
+
+          <h3>2. Remote Driving for Dollars (D4D)</h3>
+          <ul class="check-list">
+            <li>Identify distressed properties on Google Maps street view or DealMachine satellite sweeps in target neighborhoods.</li>
+            <li>Verify title ownership status on the county property appraiser site to isolate absentee owners.</li>
+          </ul>
+
+          <h3>3. US-Optimized Skip Tracing</h3>
+          <ul class="check-list">
+            <li>Input sourced names into free US search databases (TruePeopleSearch) to find active phone numbers.</li>
+            <li>Confirm contact profiles on LinkedIn and US Facebook pages to find active emails.</li>
+          </ul>
+        </div>
+
+        <!-- Week 2 Content -->
+        <div class="content-block" id="week2">
+          <h2><span>Week 2</span> Savior Outreach (US Client Focus)</h2>
+          <p class="card-desc" style="margin-bottom: 20px;">Use virtual dialers or VOIP messaging during local US hours. Senders must display a local US area code to maximize call response rates.</p>
+          
+          <h3>1. Standard Remote Outreach Script</h3>
+          <div class="script-box">
+            <button class="copy-btn" onclick="copyText('script-coldcall')">Copy Script</button>
+            <blockquote id="script-coldcall">
+              "Hi [Owner Name], my name is [Your Name] with Zion Real Estate & Services. I know this call is out of the blue, but I was looking at properties in [US Neighborhood/City] and noticed your house on [Street Name]. I wanted to see if you might be interested in a direct, hassle-free cash offer on it? We buy houses exactly as-is, pay all closing fees, and can close on your schedule."
+            </blockquote>
+          </div>
+
+          <h3>2. Remote savior Foreclosure Script</h3>
+          <div class="script-box">
+            <button class="copy-btn" onclick="copyText('script-savior')">Copy Script</button>
+            <blockquote id="script-savior">
+              "Hi [Owner Name], my name is [Your Name] from Zion Real Estate & Services. I saw that the bank has scheduled a public foreclosure auction for your property. If that auction proceeds, the bank will seize your equity, damage your credit history, and restrict your home-buying ability in the US for years. I want to partner with you to pay off what is owed, save your credit score, and unlock whatever equity is left before the auction date. I have a local representative right there in [US City] who can coordinate details. Let's look at a win-win option."
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Week 3 Content -->
+        <div class="content-block" id="week3">
+          <h2><span>Week 3</span> B2B Cash Buyer Syndication (US Investor Focus)</h2>
+          <p class="card-desc" style="margin-bottom: 20px;">Build a local cash buyers database by networking virtually. All B2B negotiations can be completed via email, WhatsApp, or phone.</p>
+
+          <h3>1. US Facebook Investor Groups</h3>
+          <ul class="check-list">
+            <li>Join 15+ real estate investor groups located in your US target market (e.g., "Atlanta Real Estate Investors", "Dallas Flippers").</li>
+            <li>Post targeted inquiries: <em>"Zion Real Estate & Services is sourcing deeply discounted, off-market contracts (60% comp average) in [US Metro/Zip]. Drop your email and buying criteria below to join our buyer list."</em></li>
+          </ul>
+
+          <h3>2. US Facebook Marketplace Syndication</h3>
+          <p class="card-desc" style="margin-top: 10px; margin-bottom: 15px;">List your deal details virtually on Facebook Marketplace in the target US location. Change your listing location to the target US city.</p>
+          <div class="script-box">
+            <button class="copy-btn" onclick="copyText('script-marketplace')">Copy Listing Info</button>
+            <div id="script-marketplace" style="font-size: 0.9rem; color: #cbd5e1; white-space: pre-wrap;">
+Category: Residential / Houses for Sale
+Listing Title: [INVESTOR SPECIAL] - As-Is Cash Deal - [US City/Neighborhood]
+Description:
+Attention investors and cash buyers! Fixer-upper deal in [US Neighborhood]. Needs kitchen, bath, and flooring renovations. Value-add opportunity. Cash, hard money, or private financing only. No conventional mortgages or rent-to-own. Buyer to pay all closing costs. Contact for access instructions and walkthrough times. 
+
+Offered by Zion Real Estate & Services.
+*Note: Selling equitable interest / contract assignment.</div>
+          </div>
+
+          <h3>3. Marketplace Inquiry Auto-Responder</h3>
+          <div class="script-box">
+            <button class="copy-btn" onclick="copyText('script-responder')">Copy Responder</button>
+            <blockquote id="script-responder">
+              "Hi! Yes, it's available. We have a walkthrough scheduled for [Date/Time]. This is a cash-only investor deal where we are selling our contract at Zion Real Estate & Services. What is your email and phone number so I can send you the full comps package, photos, and walkthrough details?"
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Week 4 Content -->
+        <div class="content-block" id="week4">
+          <h2><span>Week 4</span> Remote Closing & Assignment</h2>
+          <p class="card-desc" style="margin-bottom: 20px;">Use digital signing and wire transfers to close transactions. The Nigerian team manages coordination, while US partners manage physical operations.</p>
+
+          <h3>1. Coordinated Walkthrough Event</h3>
+          <ul class="check-list">
+            <li>Nigerian desk sets the schedule and emails the cash buyers list.</li>
+            <li>US-based partner opens the property door and coordinates the 2-hour physical walkthrough for interested investors.</li>
+            <li>Receive and evaluate all digital assignment offers submitted by buyers.</li>
+          </ul>
+
+          <h3>2. US Escrow Execution</h3>
+          <ul class="check-list">
+            <li>Execute the Zion Real Estate assignment agreement online via DocuSign/HelloSign.</li>
+            <li>Ensure the buyer deposits a **$2,500 - $5,000 non-refundable EMD** directly into the US Title Company or Closing Attorney's escrow account within 24 hours.</li>
+            <li>Closing attorney/title agent clears title, settles the deal, and wires your assignment fee.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Interactive Checklist Sidebar -->
+      <div class="sidebar">
+        
+        <div class="widget-box">
+          <h3>
+            <span class="flex-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
+            Transatlantic Tracker
+          </h3>
+          <p class="card-desc" style="margin-bottom: 15px;">Track your transatlantic milestones. Progress state is saved locally.</p>
+          
+          <div class="progress-stats">
+            <span>Overall Progress</span>
+            <span id="progress-percent">0%</span>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" id="p-bar"></div>
+          </div>
+
+          <div class="todo-list">
+            <label class="todo-item">
+              <input type="checkbox" id="task1" onchange="updateProgress()">
+              <span class="todo-text">Day 1: Setup US VOIP numbers and local US area code</span>
+            </label>
+            <label class="todo-item">
+              <input type="checkbox" id="task2" onchange="updateProgress()">
+              <span class="todo-text">Day 1-2: Setup US VPN and pull county default dockets</span>
+            </label>
+            <label class="todo-item">
+              <input type="checkbox" id="task3" onchange="updateProgress()">
+              <span class="todo-text">Day 3: Run free US skip-tracing directories on leads list</span>
+            </label>
+            <label class="todo-item">
+              <input type="checkbox" id="task4" onchange="updateProgress()">
+              <span class="todo-text">Day 4-5: Cold call/SMS targets between 3 PM and 9 PM WAT</span>
+            </label>
+            <label class="todo-item">
+              <input type="checkbox" id="task5" onchange="updateProgress()">
+              <span class="todo-text">Day 6: Join 10 local US Facebook investor groups</span>
+            </label>
+            <label class="todo-item">
+              <input type="checkbox" id="task6" onchange="updateProgress()">
+              <span class="todo-text">Day 7: Launch Facebook Marketplace listings (location set to US city)</span>
+            </label>
+            <label class="todo-item">
+              <input type="checkbox" id="task7" onchange="updateProgress()">
+              <span class="todo-text">Day 14: Secure motivated seller contract digitally (DocuSign)</span>
+            </label>
+            <label class="todo-item">
+              <input type="checkbox" id="task8" onchange="updateProgress()">
+              <span class="todo-text">Day 21: Co-ordinate US partner walkthrough & assign EMD</span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function copyText(elementId) {
+      const copyElement = document.getElementById(elementId);
+      const textToCopy = copyElement.innerText || copyElement.textContent;
+      
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const alertBox = document.createElement('div');
+        alertBox.style.position = 'fixed';
+        alertBox.style.bottom = '20px';
+        alertBox.style.right = '20px';
+        alertBox.style.background = '#d4af37';
+        alertBox.style.color = '#000';
+        alertBox.style.padding = '12px 24px';
+        alertBox.style.borderRadius = '8px';
+        alertBox.style.fontSize = '0.9rem';
+        alertBox.style.fontWeight = 'bold';
+        alertBox.style.boxShadow = '0 10px 25px rgba(212, 175, 55, 0.3)';
+        alertBox.style.zIndex = '9999';
+        alertBox.innerText = 'Copied to Clipboard!';
+        
+        document.body.appendChild(alertBox);
+        
+        setTimeout(() => {
+          alertBox.remove();
+        }, 2000);
+      });
+    }
+
+    const totalTasks = 8;
+    
+    function updateProgress() {
+      let checkedCount = 0;
+      for (let i = 1; i <= totalTasks; i++) {
+        const checkbox = document.getElementById('task' + i);
+        if (checkbox.checked) {
+          checkedCount++;
+          localStorage.setItem('zion-task-us-' + i, 'true');
+        } else {
+          localStorage.removeItem('zion-task-us-' + i);
+        }
+      }
+      
+      const percentage = Math.round((checkedCount / totalTasks) * 100);
+      document.getElementById('p-bar').style.width = percentage + '%';
+      document.getElementById('progress-percent').innerText = percentage + '%';
+    }
+
+    function loadProgress() {
+      for (let i = 1; i <= totalTasks; i++) {
+        const checkbox = document.getElementById('task' + i);
+        const savedState = localStorage.getItem('zion-task-us-' + i);
+        if (savedState === 'true') {
+          checkbox.checked = true;
+        }
+      }
+      updateProgress();
+    }
+
+    window.onload = loadProgress;
+  </script>
+</body>
+</html>
