@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zion Real Estate & Services | 30-Day Daily Marketing Blueprint</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-dark: #05080f;
+      --card-bg: rgba(16, 22, 38, 0.8);
+      --card-border: rgba(212, 175, 55, 0.14);
+      --accent-gold: #d4af37;
+      --accent-gold-grad: linear-gradient(135deg, #f59e0b, #d4af37);
+      --accent-teal: #14b8a6;
+      --accent-rose: #f43f5e;
+      --accent-blue: #3b82f6;
+      --text-primary: #f3f4f6;
+      --text-muted: #9ca3af;
+      --glow-gold: rgba(212, 175, 55, 0.15);
+      --glow-blue: rgba(59, 130, 246, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.65;
+      padding-bottom: 80px;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 10% 15%, rgba(212, 175, 55, 0.04) 0%, transparent 40%),
+        radial-gradient(circle at 90% 85%, rgba(59, 130, 246, 0.04) 0%, transparent 40%);
+    }
+
+    header {
+      padding: 90px 20px 50px;
+      text-align: center;
+      position: relative;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+    }
+
+    .brand-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .brand-title::before, .brand-title::after {
+      content: '';
+      width: 40px;
+      height: 1px;
+      background: var(--accent-gold);
+      display: inline-block;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      background: var(--accent-gold-grad);
+      color: #000;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+    }
+
+    header h1 {
+      font-size: 3.4rem;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #ffffff 40%, #fef3c7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .partnership-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .partner-tag {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 6px 16px;
+      border-radius: 8px;
+    }
+
+    .partner-tag strong {
+      color: var(--accent-gold);
+    }
+
+    /* Transatlantic Section Card */
+    .transatlantic-model {
+      background: linear-gradient(135deg, rgba(20, 27, 45, 0.9), rgba(10, 15, 30, 0.9));
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 24px;
+      padding: 40px;
+      margin-bottom: 50px;
+      position: relative;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .transatlantic-model h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .transatlantic-model h2 svg {
+      color: var(--accent-blue);
+    }
+
+    .transatlantic-model p {
+      color: var(--text-muted);
+      margin-bottom: 25px;
+      font-size: 1.05rem;
+    }
+
+    .model-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .model-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .model-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 16px;
+      transition: all 0.3s;
+    }
+
+    .model-card:hover {
+      border-color: var(--accent-blue);
+      background: rgba(59, 130, 246, 0.02);
+      box-shadow: 0 10px 25px var(--glow-blue);
+    }
+
+    .model-card h4 {
+      color: var(--accent-blue);
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .model-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* Detail Sections Grid */
+    .section-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 35px;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 900px) {
+      .section-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+
+    .content-block {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 40px;
+      backdrop-filter: blur(12px);
+      position: relative;
+    }
+
+    .content-block h2 {
+      font-size: 1.9rem;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 16px;
+    }
+
+    .content-block h2 span {
+      background: var(--accent-gold-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .content-block h3 {
+      font-size: 1.35rem;
+      margin: 28px 0 14px;
+      color: #ffffff;
+      border-left: 3px solid var(--accent-gold);
+      padding-left: 12px;
+    }
+
+    ul.check-list {
+      list-style-type: none;
+      margin-bottom: 20px;
+    }
+
+    ul.check-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 16px;
+      color: var(--text-muted);
+    }
+
+    ul.check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent-gold);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .script-box {
+      background: rgba(10, 15, 26, 0.7);
+      border: 1px dashed rgba(212, 175, 55, 0.3);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+      position: relative;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .script-box blockquote {
+      color: #cbd5e1;
+      font-style: italic;
+      font-size: 0.95rem;
+      border-left: 3px solid var(--accent-gold);
+      padding-left: 15px;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: var(--accent-gold-grad);
+      color: #000;
+      border-color: transparent;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+    }
+
+    /* Checklist Sidebar (Scrollable Container) */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .widget-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 30px;
+      backdrop-filter: blur(12px);
+    }
+
+    .widget-box h3 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .todo-container {
+      max-height: 520px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+
+    /* Custom Scrollbar styling for gold theme */
+    .todo-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    .todo-container::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 10px;
+    }
+    
+    .todo-container::-webkit-scrollbar-thumb {
+      background: rgba(212, 175, 55, 0.3);
+      border-radius: 10px;
+    }
+    
+    .todo-container::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-gold);
+    }
+
+    .todo-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .todo-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    .todo-item input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(212, 175, 55, 0.4);
+      border-radius: 6px;
+      cursor: pointer;
+      display: grid;
+      place-content: center;
+      transition: 0.15s all ease-in-out;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .todo-item input[type="checkbox"]::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      box-shadow: inset 1em 1em var(--accent-gold);
+      transform-origin: center;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    }
+
+    .todo-item input[type="checkbox"]:checked {
+      border-color: var(--accent-gold);
+      background-color: rgba(212, 175, 55, 0.1);
+    }
+
+    .todo-item input[type="checkbox"]:checked::before {
+      transform: scale(1.2);
+    }
+
+    .todo-text {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .todo-item input[type="checkbox"]:checked ~ .todo-text {
+      color: rgba(255, 255, 255, 0.4);
+      text-decoration: line-through;
+    }
+
+    .progress-container {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 999px;
+      height: 8px;
+      width: 100%;
+      margin-bottom: 25px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: var(--accent-gold-grad);
+      transition: width 0.3s ease-out;
+    }
+
+    .progress-stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    /* Warning/Compliance box */
+    .compliance-box {
+      border-left: 4px solid var(--accent-rose);
+      background: rgba(244, 63, 94, 0.05);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .compliance-box h4 {
+      color: var(--accent-rose);
+      font-size: 1rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .compliance-box p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .flex-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-title">Zion Real Estate & Services</div>
+    <div class="badge">Day-by-Day Operations</div>
+    <h1>30-Day Daily Marketing Blueprint</h1>
+    <p>A structured day-by-day roadmap engineered to source motivated US sellers, secure properties under contract remotely from Nigeria, and assign them to cash buyers.</p>
+    
+    <div class="partnership-info">
+      <div class="partner-tag">Desk Lead (Nigeria): <strong>Israel O. Dare</strong></div>
+      <div class="partner-tag">Acquisitions / US Field: <strong>E.V. Emmanuel</strong></div>
+      <div class="partner-tag">Target Market: <strong>United States (USA)</strong></div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Transatlantic Operating Model Card -->
+    <section class="transatlantic-model">
+      <h2>
+        <svg class="icon" viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        Transatlantic Operations & Positioning Strategy
+      </h2>
+      <p>By using **outside-in thinking** (looking at the market from the prospect's mind), we position Zion as the savior from credit ruin. Sourcing is managed via WAT time desk operations, while US field partners execute on-site events.</p>
+      
+      <div class="model-grid">
+        <div class="model-card">
+          <h4>Dialing Schedule</h4>
+          <p>Outreach dials are strictly locked to **3:00 PM - 10:00 PM WAT** (matching 10:00 AM - 5:00 PM US Eastern Time) to catch prospects during their daytime hours.</p>
+        </div>
+        <div class="model-card">
+          <h4>Repositioning the Bank</h4>
+          <p>We do not pitch "we buy houses cheap." We pitch: *"We stop the bank. You keep your credit."* Repositioning the lender as the equity stripper.</p>
+        </div>
+        <div class="model-card">
+          <h4>The 30-Day Loop</h4>
+          <p>If no deal is closed by Day 30, the database is recycled, skip-tracing records are refreshed, and we **restart the checklist at Day 1**.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Sections and Sidebar -->
+    <div class="section-grid">
+      
+      <!-- Main Detailed Text -->
+      <div class="main-content">
+        
+        <!-- Detailed Phase Descriptions -->
+        <div class="content-block" id="phase1">
+          <h2><span>Days 1–7</span> Foundation & Lead Sourcing</h2>
+          <p class="card-desc">Set up local virtual infrastructure and extract raw data from US county clerk and tax assessment registries.</p>
+          
+          <h3>Day-by-Day Focus:</h3>
+          <ul class="check-list">
+            <li><strong>Day 1: Virtual Infrastructure Setup</strong> - Configure US VOIP accounts (OpenPhone, Dialpad) and match local area codes of target US metros.</li>
+            <li><strong>Day 2: County Default Extraction</strong> - Open US VPN. Sift county registry portals for foreclosure filings (Lis Pendens dockets).</li>
+            <li><strong>Day 3: Tax Delinquency Rolls</strong> - Extract current delinquency logs from the local county tax assessor website.</li>
+            <li><strong>Day 4: Probate Registry Audits</strong> - Audit probate registers for recently inherited properties with out-of-state heirs.</li>
+            <li><strong>Day 5: Remote driving for dollars</strong> - Sweep target zones via Google Maps street views, documenting properties with obvious neglect.</li>
+            <li><strong>Day 6: US Skip Tracing</strong> - Run all collected addresses through free directories (TruePeopleSearch) to find owners' mobile phone numbers.</li>
+            <li><strong>Day 7: Sourcing Consolidation</strong> - Deduplicate and clean your list, importing leads into your master Google sheet.</li>
+          </ul>
+        </div>
+
+        <div class="content-block" id="phase2">
+          <h2><span>Days 8–14</span> Cash Buyer Sourcing & Savior Dialing</h2>
+          <p class="card-desc">Gather cash flippers in parallel with launching B2C phone/SMS credit-saving outreach.</p>
+          
+          <h3>Day-by-Day Focus:</h3>
+          <ul class="check-list">
+            <li><strong>Day 8: US Investor Networks</strong> - Join 15+ target US Real Estate Investor (REIA) Facebook and WhatsApp groups.</li>
+            <li><strong>Day 9: Buyer Database Harvesting</strong> - Post queries in REIA groups to harvest active cash flippers' emails.</li>
+            <li><strong>Day 10: Flippers Reverse Sourcing</strong> - Sift local rehab listings for sale, locate the buying LLCs, and add the developers directly.</li>
+            <li><strong>Day 11: B2C Dialing Phase A</strong> - Initiate 30 dials/texts to your foreclosure default list between 3 PM and 9 PM WAT.</li>
+            <li><strong>Day 12: B2C Dialing Phase B</strong> - Dial 30 tax-delinquent targets, highlighting credit rescue and tax payment solutions.</li>
+            <li><strong>Day 13: B2C Dialing Phase C</strong> - Dial 30 probate targets, pitching direct, hassle-free estate liquidations.</li>
+            <li><strong>Day 14: Lead Classification</strong> - Call back warm leads, run comps, and group active interests into the pipeline.</li>
+          </ul>
+        </div>
+
+        <div class="content-block" id="phase3">
+          <h2><span>Days 15–21</span> Comps, Offerings & Contracting</h2>
+          <p class="card-desc">Analyze comps, present digital purchase offers, and coordinate media walkthroughs.</p>
+          
+          <h3>Day-by-Day Focus:</h3>
+          <ul class="check-list">
+            <li><strong>Day 15: Comps & ARV Analysis</strong> - Pull comps for active warm leads. Calculate ARV and target 60% discount thresholds.</li>
+            <li><strong>Day 16: Draft Written Offers</strong> - Prepare purchase agreements. Email digital proposals via DocuSign to motivated sellers.</li>
+            <li><strong>Day 17: Objection Handling Dialing</strong> - Call sellers to walk through offers, countering objections with the Savior Pitch.</li>
+            <li><strong>Day 18: Contract Execution</strong> - Secure seller signatures digitally under Zion Real Estate & Services.</li>
+            <li><strong>Day 19: Opening Escrow</strong> - Email the signed purchase contract to the US title company/closing attorney to open title search.</li>
+            <li><strong>Day 20: US Partner Dispatch</strong> - Coordinate US partners to visit the property and capture 30+ HD photos and walkthrough video.</li>
+            <li><strong>Day 21: Media Packet Design</strong> - Compile comps, repair estimates, and walkthrough media into a shared Google Drive folder.</li>
+          </ul>
+        </div>
+
+        <div class="content-block" id="phase4">
+          <h2><span>Days 22–30</span> Deal Syndication & Assignment Close</h2>
+          <p class="card-desc">Execute high-velocity contract sales to your B2B buyers list and close escrow.</p>
+          
+          <h3>Day-by-Day Focus:</h3>
+          <ul class="check-list">
+            <li><strong>Day 22: Marketplace Launch</strong> - Post the deal on US Facebook Marketplace using the [INVESTOR SPECIAL] template.</li>
+            <li><strong>Day 23: VIP Buyer Blast</strong> - Send the property drive link directly to your top 10 cash buyers.</li>
+            <li><strong>Day 24: General Buyer Blast</strong> - Email/SMS the deal package to your entire cash buyer database.</li>
+            <li><strong>Day 25: Direct Flippers Pitch</strong> - Directly message flippers identified in Week 2, pitching the 40% equity spread.</li>
+            <li><strong>Day 26: Unified Walkthrough Event</strong> - US partners open the property for a 2-hour walkthrough, generating FOMO.</li>
+            <li><strong>Day 27: Offer Selection</strong> - Review all submitted bids; select the highest net assignment price.</li>
+            <li><strong>Day 28: Assignment Agreement</strong> - Digitally sign the contract assignment with the selected cash investor.</li>
+            <li><strong>Day 29: Escrow EMD Verification</strong> - Verify the closing attorney has received the buyer's non-refundable deposit wire.</li>
+            <li><strong>Day 30: Escrow Close</strong> - Coordinate final closing paperwork. Escrow wires your assignment fee.</li>
+          </ul>
+
+          <div class="compliance-box">
+            <h4>Zion Safety Loop</h4>
+            <p><strong>If a transaction is not locked and assigned by Day 30:</strong> Recycle your leads sheet, clean the databases, refresh skip-tracing phone lines, and **restart immediately at Day 1** to maintain deal flow pipeline velocity.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Interactive Checklist Sidebar (30-Day Scrollable List) -->
+      <div class="sidebar">
+        
+        <div class="widget-box">
+          <h3>
+            <span class="flex-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
+            30-Day Action Tracker
+          </h3>
+          <p class="card-desc" style="margin-bottom: 15px;">Track daily milestones. State is saved locally.</p>
+          
+          <div class="progress-stats">
+            <span>Overall Progress</span>
+            <span id="progress-percent">0%</span>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" id="p-bar"></div>
+          </div>
+
+          <!-- Scrollable checklist area -->
+          <div class="todo-container">
+            <div class="todo-list">
+              <!-- Days 1-7 -->
+              <label class="todo-item"><input type="checkbox" id="task1" onchange="updateProgress()"><span class="todo-text">Day 1: Setup US VOIP numbers & local area code</span></label>
+              <label class="todo-item"><input type="checkbox" id="task2" onchange="updateProgress()"><span class="todo-text">Day 2: Setup US VPN and pull county records</span></label>
+              <label class="todo-item"><input type="checkbox" id="task3" onchange="updateProgress()"><span class="todo-text">Day 3: Extract delinquent tax rosters</span></label>
+              <label class="todo-item"><input type="checkbox" id="task4" onchange="updateProgress()"><span class="todo-text">Day 4: Sift probate registry for out-of-town heirs</span></label>
+              <label class="todo-item"><input type="checkbox" id="task5" onchange="updateProgress()"><span class="todo-text">Day 5: Remote driving for dollars via maps/satellites</span></label>
+              <label class="todo-item"><input type="checkbox" id="task6" onchange="updateProgress()"><span class="todo-text">Day 6: Skip trace top 150 leads for phone numbers</span></label>
+              <label class="todo-item"><input type="checkbox" id="task7" onchange="updateProgress()"><span class="todo-text">Day 7: Import cleaned target lists to Google sheet</span></label>
+              <!-- Days 8-14 -->
+              <label class="todo-item"><input type="checkbox" id="task8" onchange="updateProgress()"><span class="todo-text">Day 8: Join 15 target US investor Facebook groups</span></label>
+              <label class="todo-item"><input type="checkbox" id="task9" onchange="updateProgress()"><span class="todo-text">Day 9: Post buyer search queries in target groups</span></label>
+              <label class="todo-item"><input type="checkbox" id="task10" onchange="updateProgress()"><span class="todo-text">Day 10: Identify active rehab flippers via list sites</span></label>
+              <label class="todo-item"><input type="checkbox" id="task11" onchange="updateProgress()"><span class="todo-text">Day 11: Dial 30 default foreclosure targets (US hours)</span></label>
+              <label class="todo-item"><input type="checkbox" id="task12" onchange="updateProgress()"><span class="todo-text">Day 12: Dial 30 tax delinquent targets</span></label>
+              <label class="todo-item"><input type="checkbox" id="task13" onchange="updateProgress()"><span class="todo-text">Day 13: Dial 30 probate leads</span></label>
+              <label class="todo-item"><input type="checkbox" id="task14" onchange="updateProgress()"><span class="todo-text">Day 14: Follow up warm leads and run target metrics</span></label>
+              <!-- Days 15-21 -->
+              <label class="todo-item"><input type="checkbox" id="task15" onchange="updateProgress()"><span class="todo-text">Day 15: Run comps & calculate ARV (60% targets)</span></label>
+              <label class="todo-item"><input type="checkbox" id="task16" onchange="updateProgress()"><span class="todo-text">Day 16: Draft and email proposal contracts to sellers</span></label>
+              <label class="todo-item"><input type="checkbox" id="task17" onchange="updateProgress()"><span class="todo-text">Day 17: Follow up on offers and objections</span></label>
+              <label class="todo-item"><input type="checkbox" id="task18" onchange="updateProgress()"><span class="todo-text">Day 18: Secure signed purchase contract virtually</span></label>
+              <label class="todo-item"><input type="checkbox" id="task19" onchange="updateProgress()"><span class="todo-text">Day 19: Open title and escrow files with US agent</span></label>
+              <label class="todo-item"><input type="checkbox" id="task20" onchange="updateProgress()"><span class="todo-text">Day 20: Send US partner to capture photo/video media</span></label>
+              <label class="todo-item"><input type="checkbox" id="task21" onchange="updateProgress()"><span class="todo-text">Day 21: Package deal folder and drive link details</span></label>
+              <!-- Days 22-30 -->
+              <label class="todo-item"><input type="checkbox" id="task22" onchange="updateProgress()"><span class="todo-text">Day 22: Post deal on US Marketplace (Investor Special)</span></label>
+              <label class="todo-item"><input type="checkbox" id="task23" onchange="updateProgress()"><span class="todo-text">Day 23: Direct pitch deal folder to top 10 VIP buyers</span></label>
+              <label class="todo-item"><input type="checkbox" id="task24" onchange="updateProgress()"><span class="todo-text">Day 24: Email/SMS blast general buyer database</span></label>
+              <label class="todo-item"><input type="checkbox" id="task25" onchange="updateProgress()"><span class="todo-text">Day 25: Outreach local flippers on social networks</span></label>
+              <label class="todo-item"><input type="checkbox" id="task26" onchange="updateProgress()"><span class="todo-text">Day 26: US partner hosts competitive walkthrough</span></label>
+              <label class="todo-item"><input type="checkbox" id="task27" onchange="updateProgress()"><span class="todo-text">Day 27: Settle walkthrough offers & select highest bid</span></label>
+              <label class="todo-item"><input type="checkbox" id="task28" onchange="updateProgress()"><span class="todo-text">Day 28: Execute digital assignment contract</span></label>
+              <label class="todo-item"><input type="checkbox" id="task29" onchange="updateProgress()"><span class="todo-text">Day 29: Verify buyer wires non-refundable EMD</span></label>
+              <label class="todo-item"><input type="checkbox" id="task30" onchange="updateProgress()"><span class="todo-text">Day 30: Clear title, close escrow, collect wire fee</span></label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function copyText(elementId) {
+      const copyElement = document.getElementById(elementId);
+      const textToCopy = copyElement.innerText || copyElement.textContent;
+      
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const alertBox = document.createElement('div');
+        alertBox.style.position = 'fixed';
+        alertBox.style.bottom = '20px';
+        alertBox.style.right = '20px';
+        alertBox.style.background = '#d4af37';
+        alertBox.style.color = '#000';
+        alertBox.style.padding = '12px 24px';
+        alertBox.style.borderRadius = '8px';
+        alertBox.style.fontSize = '0.9rem';
+        alertBox.style.fontWeight = 'bold';
+        alertBox.style.boxShadow = '0 10px 25px rgba(212, 175, 55, 0.3)';
+        alertBox.style.zIndex = '9999';
+        alertBox.innerText = 'Copied to Clipboard!';
+        
+        document.body.appendChild(alertBox);
+        
+        setTimeout(() => {
+          alertBox.remove();
+        }, 2000);
+      });
+    }
+
+    const totalTasks = 30;
+    
+    function updateProgress() {
+      let checkedCount = 0;
+      for (let i = 1; i <= totalTasks; i++) {
+        const checkbox = document.getElementById('task' + i);
+        if (checkbox.checked) {
+          checkedCount++;
+          localStorage.setItem('zion-daily-task-' + i, 'true');
+        } else {
+          localStorage.removeItem('zion-daily-task-' + i);
+        }
+      }
+      
+      const percentage = Math.round((checkedCount / totalTasks) * 100);
+      document.getElementById('p-bar').style.width = percentage + '%';
+      document.getElementById('progress-percent').innerText = percentage + '%';
+    }
+
+    function loadProgress() {
+      for (let i = 1; i <= totalTasks; i++) {
+        const checkbox = document.getElementById('task' + i);
+        const savedState = localStorage.getItem('zion-daily-task-' + i);
+        if (checkbox.checked) {
+          checkbox.checked = true;
+        } else if (savedState === 'true') {
+          checkbox.checked = true;
+        }
+      }
+      updateProgress();
+    }
+
+    window.onload = loadProgress;
+  </script>
+</body>
+</html>
