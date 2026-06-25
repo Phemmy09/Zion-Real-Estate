@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zion Real Estate & Services | Transatlantic 30-Day Marketing Plan</title>
+  <title>Zion Real Estate & Services | 30-Day Daily Marketing Blueprint</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -194,81 +194,6 @@
       line-height: 1.5;
     }
 
-    /* Roadmap Timeline styling */
-    .timeline-container {
-      margin: 40px 0 65px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
-
-    @media (max-width: 900px) {
-      .timeline-container {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .timeline-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 20px;
-      padding: 30px;
-      position: relative;
-      overflow: hidden;
-      backdrop-filter: blur(12px);
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .timeline-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: var(--accent-gold-grad);
-      opacity: 0.8;
-    }
-
-    .timeline-card:hover {
-      transform: translateY(-8px);
-      border-color: rgba(212, 175, 55, 0.35);
-      box-shadow: 0 15px 35px var(--glow-gold);
-    }
-
-    .timeline-card.teal-top::before {
-      background: var(--accent-teal);
-    }
-    .timeline-card.teal-top:hover {
-      border-color: rgba(20, 184, 166, 0.3);
-      box-shadow: 0 15px 35px var(--glow-teal);
-    }
-
-    .card-week {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--accent-gold);
-      letter-spacing: 0.1em;
-      margin-bottom: 12px;
-    }
-
-    .timeline-card.teal-top .card-week {
-      color: var(--accent-teal);
-    }
-
-    .card-title {
-      font-size: 1.45rem;
-      margin-bottom: 12px;
-      color: #ffffff;
-    }
-
-    .card-desc {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
     /* Detail Sections Grid */
     .section-grid {
       display: grid;
@@ -384,7 +309,7 @@
       box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
     }
 
-    /* Checklist Sidebar */
+    /* Checklist Sidebar (Scrollable Container) */
     .sidebar {
       display: flex;
       flex-direction: column;
@@ -406,6 +331,31 @@
       display: flex;
       align-items: center;
       gap: 10px;
+    }
+
+    .todo-container {
+      max-height: 520px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+
+    /* Custom Scrollbar styling for gold theme */
+    .todo-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    .todo-container::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 10px;
+    }
+    
+    .todo-container::-webkit-scrollbar-thumb {
+      background: rgba(212, 175, 55, 0.3);
+      border-radius: 10px;
+    }
+    
+    .todo-container::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-gold);
     }
 
     .todo-list {
@@ -532,9 +482,9 @@
 
   <header>
     <div class="brand-title">Zion Real Estate & Services</div>
-    <div class="badge">Transatlantic Sourcing Model</div>
-    <h1>30-Day Zero-Budget Marketing Plan</h1>
-    <p>A specialized remote-desk workflow designed to locate, contract, and assign distressed US real estate assets from Nigeria, leveraging local US-based partners for boots-on-the-ground support.</p>
+    <div class="badge">Day-by-Day Operations</div>
+    <h1>30-Day Daily Marketing Blueprint</h1>
+    <p>A structured day-by-day roadmap engineered to source motivated US sellers, secure properties under contract remotely from Nigeria, and assign them to cash buyers.</p>
     
     <div class="partnership-info">
       <div class="partner-tag">Desk Lead (Nigeria): <strong>Israel O. Dare</strong></div>
@@ -549,47 +499,23 @@
     <section class="transatlantic-model">
       <h2>
         <svg class="icon" viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-        Transatlantic Operations: Nigeria to United States
+        Transatlantic Operations & Positioning Strategy
       </h2>
-      <p>To successfully wholesaling and novating properties in the US while residing in Nigeria, we leverage digital workflow tools and strong remote-to-local partner collaboration protocols.</p>
+      <p>By using **outside-in thinking** (looking at the market from the prospect's mind), we position Zion as the savior from credit ruin. Sourcing is managed via WAT time desk operations, while US field partners execute on-site events.</p>
       
       <div class="model-grid">
         <div class="model-card">
-          <h4>1. Time Zone Management</h4>
-          <p>Nigeria (WAT, UTC+1) is 5 hours ahead of US Eastern Time (EST) and 8 hours ahead of Pacific Time (PST). Sourcing & dial/SMS outreach must run during US afternoon hours (usually <strong>3:00 PM to 10:00 PM WAT</strong>).</p>
+          <h4>Dialing Schedule</h4>
+          <p>Outreach dials are strictly locked to **3:00 PM - 10:00 PM WAT** (matching 10:00 AM - 5:00 PM US Eastern Time) to catch prospects during their daytime hours.</p>
         </div>
         <div class="model-card">
-          <h4>2. US Local Presence Stack</h4>
-          <p>We utilize US VOIP portals (like OpenPhone or Google Voice) to dial with US local area codes. We browse US municipal registries using VPNs to bypass geolocation access blocks.</p>
+          <h4>Repositioning the Bank</h4>
+          <p>We do not pitch "we buy houses cheap." We pitch: *"We stop the bank. You keep your credit."* Repositioning the lender as the equity stripper.</p>
         </div>
         <div class="model-card">
-          <h4>3. Partner Hand-Off</h4>
-          <p>Remote Sourcing (Nigeria) extracts the list and initiates contracts virtually (DocuSign). Local Partners (USA) act as the physical presence for inspections, video captures, and walkthroughs.</p>
+          <h4>The 30-Day Loop</h4>
+          <p>If no deal is closed by Day 30, the database is recycled, skip-tracing records are refreshed, and we **restart the checklist at Day 1**.</p>
         </div>
-      </div>
-    </section>
-    
-    <!-- Timeline Overview -->
-    <section class="timeline-container">
-      <div class="timeline-card">
-        <div class="card-week">Week 01</div>
-        <h3 class="card-title">Virtual Sourcing</h3>
-        <p class="card-desc">Sift US county default databases via VPN. Skip-trace and map billing addresses to locate owners.</p>
-      </div>
-      <div class="timeline-card">
-        <div class="card-week">Week 02</div>
-        <h3 class="card-title">Savior Outreach</h3>
-        <p class="card-desc">Initiate calls/texts via US VOIP lines during US business hours. Deploy the credit rescue script.</p>
-      </div>
-      <div class="timeline-card teal-top">
-        <div class="card-week">Week 03</div>
-        <h3 class="card-title">Pre-Selling & MP</h3>
-        <p class="card-desc">Syndicate deals on Facebook Marketplace and US investor groups. Capture cash buyers virtually.</p>
-      </div>
-      <div class="timeline-card teal-top">
-        <div class="card-week">Week 04</div>
-        <h3 class="card-title">US Escrow Close</h3>
-        <p class="card-desc">US partners host the walkthrough. Sign assignment documents remotely, close with US title companies.</p>
       </div>
     </section>
 
@@ -599,118 +525,89 @@
       <!-- Main Detailed Text -->
       <div class="main-content">
         
-        <!-- Week 1 Content -->
-        <div class="content-block" id="week1">
-          <h2><span>Week 1</span> Sourcing & US Mind Mapping</h2>
-          <p class="card-desc" style="margin-bottom: 20px;">Remote desk team (Nigeria) builds databases of distressed US assets using public registers. Local target markets in the US should align with where US partners operate.</p>
+        <!-- Detailed Phase Descriptions -->
+        <div class="content-block" id="phase1">
+          <h2><span>Days 1–7</span> Foundation & Lead Sourcing</h2>
+          <p class="card-desc">Set up local virtual infrastructure and extract raw data from US county clerk and tax assessment registries.</p>
           
-          <h3>1. Sourcing US Registries (Lis Pendens / Tax Liens)</h3>
+          <h3>Day-by-Day Focus:</h3>
           <ul class="check-list">
-            <li><strong>US County Registries:</strong> Browse target county clerk websites (e.g., in Texas, Florida, Georgia) using a US VPN. </li>
-            <li><strong>Lis Pendens / Default Lists:</strong> Extract property owners who have missed 3+ mortgage payments.</li>
-            <li><strong>Tax Auction Rolls:</strong> Pull delinquent list files from the local county tax assessor website.</li>
-          </ul>
-
-          <h3>2. Remote Driving for Dollars (D4D)</h3>
-          <ul class="check-list">
-            <li>Identify distressed properties on Google Maps street view or DealMachine satellite sweeps in target neighborhoods.</li>
-            <li>Verify title ownership status on the county property appraiser site to isolate absentee owners.</li>
-          </ul>
-
-          <h3>3. US-Optimized Skip Tracing</h3>
-          <ul class="check-list">
-            <li>Input sourced names into free US search databases (TruePeopleSearch) to find active phone numbers.</li>
-            <li>Confirm contact profiles on LinkedIn and US Facebook pages to find active emails.</li>
+            <li><strong>Day 1: Virtual Infrastructure Setup</strong> - Configure US VOIP accounts (OpenPhone, Dialpad) and match local area codes of target US metros.</li>
+            <li><strong>Day 2: County Default Extraction</strong> - Open US VPN. Sift county registry portals for foreclosure filings (Lis Pendens dockets).</li>
+            <li><strong>Day 3: Tax Delinquency Rolls</strong> - Extract current delinquency logs from the local county tax assessor website.</li>
+            <li><strong>Day 4: Probate Registry Audits</strong> - Audit probate registers for recently inherited properties with out-of-state heirs.</li>
+            <li><strong>Day 5: Remote driving for dollars</strong> - Sweep target zones via Google Maps street views, documenting properties with obvious neglect.</li>
+            <li><strong>Day 6: US Skip Tracing</strong> - Run all collected addresses through free directories (TruePeopleSearch) to find owners' mobile phone numbers.</li>
+            <li><strong>Day 7: Sourcing Consolidation</strong> - Deduplicate and clean your list, importing leads into your master Google sheet.</li>
           </ul>
         </div>
 
-        <!-- Week 2 Content -->
-        <div class="content-block" id="week2">
-          <h2><span>Week 2</span> Savior Outreach (US Client Focus)</h2>
-          <p class="card-desc" style="margin-bottom: 20px;">Use virtual dialers or VOIP messaging during local US hours. Senders must display a local US area code to maximize call response rates.</p>
+        <div class="content-block" id="phase2">
+          <h2><span>Days 8–14</span> Cash Buyer Sourcing & Savior Dialing</h2>
+          <p class="card-desc">Gather cash flippers in parallel with launching B2C phone/SMS credit-saving outreach.</p>
           
-          <h3>1. Standard Remote Outreach Script</h3>
-          <div class="script-box">
-            <button class="copy-btn" onclick="copyText('script-coldcall')">Copy Script</button>
-            <blockquote id="script-coldcall">
-              "Hi [Owner Name], my name is [Your Name] with Zion Real Estate & Services. I know this call is out of the blue, but I was looking at properties in [US Neighborhood/City] and noticed your house on [Street Name]. I wanted to see if you might be interested in a direct, hassle-free cash offer on it? We buy houses exactly as-is, pay all closing fees, and can close on your schedule."
-            </blockquote>
-          </div>
-
-          <h3>2. Remote savior Foreclosure Script</h3>
-          <div class="script-box">
-            <button class="copy-btn" onclick="copyText('script-savior')">Copy Script</button>
-            <blockquote id="script-savior">
-              "Hi [Owner Name], my name is [Your Name] from Zion Real Estate & Services. I saw that the bank has scheduled a public foreclosure auction for your property. If that auction proceeds, the bank will seize your equity, damage your credit history, and restrict your home-buying ability in the US for years. I want to partner with you to pay off what is owed, save your credit score, and unlock whatever equity is left before the auction date. I have a local representative right there in [US City] who can coordinate details. Let's look at a win-win option."
-            </blockquote>
-          </div>
+          <h3>Day-by-Day Focus:</h3>
+          <ul class="check-list">
+            <li><strong>Day 8: US Investor Networks</strong> - Join 15+ target US Real Estate Investor (REIA) Facebook and WhatsApp groups.</li>
+            <li><strong>Day 9: Buyer Database Harvesting</strong> - Post queries in REIA groups to harvest active cash flippers' emails.</li>
+            <li><strong>Day 10: Flippers Reverse Sourcing</strong> - Sift local rehab listings for sale, locate the buying LLCs, and add the developers directly.</li>
+            <li><strong>Day 11: B2C Dialing Phase A</strong> - Initiate 30 dials/texts to your foreclosure default list between 3 PM and 9 PM WAT.</li>
+            <li><strong>Day 12: B2C Dialing Phase B</strong> - Dial 30 tax-delinquent targets, highlighting credit rescue and tax payment solutions.</li>
+            <li><strong>Day 13: B2C Dialing Phase C</strong> - Dial 30 probate targets, pitching direct, hassle-free estate liquidations.</li>
+            <li><strong>Day 14: Lead Classification</strong> - Call back warm leads, run comps, and group active interests into the pipeline.</li>
+          </ul>
         </div>
 
-        <!-- Week 3 Content -->
-        <div class="content-block" id="week3">
-          <h2><span>Week 3</span> B2B Cash Buyer Syndication (US Investor Focus)</h2>
-          <p class="card-desc" style="margin-bottom: 20px;">Build a local cash buyers database by networking virtually. All B2B negotiations can be completed via email, WhatsApp, or phone.</p>
-
-          <h3>1. US Facebook Investor Groups</h3>
+        <div class="content-block" id="phase3">
+          <h2><span>Days 15–21</span> Comps, Offerings & Contracting</h2>
+          <p class="card-desc">Analyze comps, present digital purchase offers, and coordinate media walkthroughs.</p>
+          
+          <h3>Day-by-Day Focus:</h3>
           <ul class="check-list">
-            <li>Join 15+ real estate investor groups located in your US target market (e.g., "Atlanta Real Estate Investors", "Dallas Flippers").</li>
-            <li>Post targeted inquiries: <em>"Zion Real Estate & Services is sourcing deeply discounted, off-market contracts (60% comp average) in [US Metro/Zip]. Drop your email and buying criteria below to join our buyer list."</em></li>
+            <li><strong>Day 15: Comps & ARV Analysis</strong> - Pull comps for active warm leads. Calculate ARV and target 60% discount thresholds.</li>
+            <li><strong>Day 16: Draft Written Offers</strong> - Prepare purchase agreements. Email digital proposals via DocuSign to motivated sellers.</li>
+            <li><strong>Day 17: Objection Handling Dialing</strong> - Call sellers to walk through offers, countering objections with the Savior Pitch.</li>
+            <li><strong>Day 18: Contract Execution</strong> - Secure seller signatures digitally under Zion Real Estate & Services.</li>
+            <li><strong>Day 19: Opening Escrow</strong> - Email the signed purchase contract to the US title company/closing attorney to open title search.</li>
+            <li><strong>Day 20: US Partner Dispatch</strong> - Coordinate US partners to visit the property and capture 30+ HD photos and walkthrough video.</li>
+            <li><strong>Day 21: Media Packet Design</strong> - Compile comps, repair estimates, and walkthrough media into a shared Google Drive folder.</li>
           </ul>
-
-          <h3>2. US Facebook Marketplace Syndication</h3>
-          <p class="card-desc" style="margin-top: 10px; margin-bottom: 15px;">List your deal details virtually on Facebook Marketplace in the target US location. Change your listing location to the target US city.</p>
-          <div class="script-box">
-            <button class="copy-btn" onclick="copyText('script-marketplace')">Copy Listing Info</button>
-            <div id="script-marketplace" style="font-size: 0.9rem; color: #cbd5e1; white-space: pre-wrap;">
-Category: Residential / Houses for Sale
-Listing Title: [INVESTOR SPECIAL] - As-Is Cash Deal - [US City/Neighborhood]
-Description:
-Attention investors and cash buyers! Fixer-upper deal in [US Neighborhood]. Needs kitchen, bath, and flooring renovations. Value-add opportunity. Cash, hard money, or private financing only. No conventional mortgages or rent-to-own. Buyer to pay all closing costs. Contact for access instructions and walkthrough times. 
-
-Offered by Zion Real Estate & Services.
-*Note: Selling equitable interest / contract assignment.</div>
-          </div>
-
-          <h3>3. Marketplace Inquiry Auto-Responder</h3>
-          <div class="script-box">
-            <button class="copy-btn" onclick="copyText('script-responder')">Copy Responder</button>
-            <blockquote id="script-responder">
-              "Hi! Yes, it's available. We have a walkthrough scheduled for [Date/Time]. This is a cash-only investor deal where we are selling our contract at Zion Real Estate & Services. What is your email and phone number so I can send you the full comps package, photos, and walkthrough details?"
-            </blockquote>
-          </div>
         </div>
 
-        <!-- Week 4 Content -->
-        <div class="content-block" id="week4">
-          <h2><span>Week 4</span> Remote Closing & Assignment</h2>
-          <p class="card-desc" style="margin-bottom: 20px;">Use digital signing and wire transfers to close transactions. The Nigerian team manages coordination, while US partners manage physical operations.</p>
-
-          <h3>1. Coordinated Walkthrough Event</h3>
+        <div class="content-block" id="phase4">
+          <h2><span>Days 22–30</span> Deal Syndication & Assignment Close</h2>
+          <p class="card-desc">Execute high-velocity contract sales to your B2B buyers list and close escrow.</p>
+          
+          <h3>Day-by-Day Focus:</h3>
           <ul class="check-list">
-            <li>Nigerian desk sets the schedule and emails the cash buyers list.</li>
-            <li>US-based partner opens the property door and coordinates the 2-hour physical walkthrough for interested investors.</li>
-            <li>Receive and evaluate all digital assignment offers submitted by buyers.</li>
+            <li><strong>Day 22: Marketplace Launch</strong> - Post the deal on US Facebook Marketplace using the [INVESTOR SPECIAL] template.</li>
+            <li><strong>Day 23: VIP Buyer Blast</strong> - Send the property drive link directly to your top 10 cash buyers.</li>
+            <li><strong>Day 24: General Buyer Blast</strong> - Email/SMS the deal package to your entire cash buyer database.</li>
+            <li><strong>Day 25: Direct Flippers Pitch</strong> - Directly message flippers identified in Week 2, pitching the 40% equity spread.</li>
+            <li><strong>Day 26: Unified Walkthrough Event</strong> - US partners open the property for a 2-hour walkthrough, generating FOMO.</li>
+            <li><strong>Day 27: Offer Selection</strong> - Review all submitted bids; select the highest net assignment price.</li>
+            <li><strong>Day 28: Assignment Agreement</strong> - Digitally sign the contract assignment with the selected cash investor.</li>
+            <li><strong>Day 29: Escrow EMD Verification</strong> - Verify the closing attorney has received the buyer's non-refundable deposit wire.</li>
+            <li><strong>Day 30: Escrow Close</strong> - Coordinate final closing paperwork. Escrow wires your assignment fee.</li>
           </ul>
 
-          <h3>2. US Escrow Execution</h3>
-          <ul class="check-list">
-            <li>Execute the Zion Real Estate assignment agreement online via DocuSign/HelloSign.</li>
-            <li>Ensure the buyer deposits a **$2,500 - $5,000 non-refundable EMD** directly into the US Title Company or Closing Attorney's escrow account within 24 hours.</li>
-            <li>Closing attorney/title agent clears title, settles the deal, and wires your assignment fee.</li>
-          </ul>
+          <div class="compliance-box">
+            <h4>Zion Safety Loop</h4>
+            <p><strong>If a transaction is not locked and assigned by Day 30:</strong> Recycle your leads sheet, clean the databases, refresh skip-tracing phone lines, and **restart immediately at Day 1** to maintain deal flow pipeline velocity.</p>
+          </div>
         </div>
 
       </div>
 
-      <!-- Interactive Checklist Sidebar -->
+      <!-- Interactive Checklist Sidebar (30-Day Scrollable List) -->
       <div class="sidebar">
         
         <div class="widget-box">
           <h3>
             <span class="flex-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span>
-            Transatlantic Tracker
+            30-Day Action Tracker
           </h3>
-          <p class="card-desc" style="margin-bottom: 15px;">Track your transatlantic milestones. Progress state is saved locally.</p>
+          <p class="card-desc" style="margin-bottom: 15px;">Track daily milestones. State is saved locally.</p>
           
           <div class="progress-stats">
             <span>Overall Progress</span>
@@ -720,39 +617,44 @@ Offered by Zion Real Estate & Services.
             <div class="progress-bar" id="p-bar"></div>
           </div>
 
-          <div class="todo-list">
-            <label class="todo-item">
-              <input type="checkbox" id="task1" onchange="updateProgress()">
-              <span class="todo-text">Day 1: Setup US VOIP numbers and local US area code</span>
-            </label>
-            <label class="todo-item">
-              <input type="checkbox" id="task2" onchange="updateProgress()">
-              <span class="todo-text">Day 1-2: Setup US VPN and pull county default dockets</span>
-            </label>
-            <label class="todo-item">
-              <input type="checkbox" id="task3" onchange="updateProgress()">
-              <span class="todo-text">Day 3: Run free US skip-tracing directories on leads list</span>
-            </label>
-            <label class="todo-item">
-              <input type="checkbox" id="task4" onchange="updateProgress()">
-              <span class="todo-text">Day 4-5: Cold call/SMS targets between 3 PM and 9 PM WAT</span>
-            </label>
-            <label class="todo-item">
-              <input type="checkbox" id="task5" onchange="updateProgress()">
-              <span class="todo-text">Day 6: Join 10 local US Facebook investor groups</span>
-            </label>
-            <label class="todo-item">
-              <input type="checkbox" id="task6" onchange="updateProgress()">
-              <span class="todo-text">Day 7: Launch Facebook Marketplace listings (location set to US city)</span>
-            </label>
-            <label class="todo-item">
-              <input type="checkbox" id="task7" onchange="updateProgress()">
-              <span class="todo-text">Day 14: Secure motivated seller contract digitally (DocuSign)</span>
-            </label>
-            <label class="todo-item">
-              <input type="checkbox" id="task8" onchange="updateProgress()">
-              <span class="todo-text">Day 21: Co-ordinate US partner walkthrough & assign EMD</span>
-            </label>
+          <!-- Scrollable checklist area -->
+          <div class="todo-container">
+            <div class="todo-list">
+              <!-- Days 1-7 -->
+              <label class="todo-item"><input type="checkbox" id="task1" onchange="updateProgress()"><span class="todo-text">Day 1: Setup US VOIP numbers & local area code</span></label>
+              <label class="todo-item"><input type="checkbox" id="task2" onchange="updateProgress()"><span class="todo-text">Day 2: Setup US VPN and pull county records</span></label>
+              <label class="todo-item"><input type="checkbox" id="task3" onchange="updateProgress()"><span class="todo-text">Day 3: Extract delinquent tax rosters</span></label>
+              <label class="todo-item"><input type="checkbox" id="task4" onchange="updateProgress()"><span class="todo-text">Day 4: Sift probate registry for out-of-town heirs</span></label>
+              <label class="todo-item"><input type="checkbox" id="task5" onchange="updateProgress()"><span class="todo-text">Day 5: Remote driving for dollars via maps/satellites</span></label>
+              <label class="todo-item"><input type="checkbox" id="task6" onchange="updateProgress()"><span class="todo-text">Day 6: Skip trace top 150 leads for phone numbers</span></label>
+              <label class="todo-item"><input type="checkbox" id="task7" onchange="updateProgress()"><span class="todo-text">Day 7: Import cleaned target lists to Google sheet</span></label>
+              <!-- Days 8-14 -->
+              <label class="todo-item"><input type="checkbox" id="task8" onchange="updateProgress()"><span class="todo-text">Day 8: Join 15 target US investor Facebook groups</span></label>
+              <label class="todo-item"><input type="checkbox" id="task9" onchange="updateProgress()"><span class="todo-text">Day 9: Post buyer search queries in target groups</span></label>
+              <label class="todo-item"><input type="checkbox" id="task10" onchange="updateProgress()"><span class="todo-text">Day 10: Identify active rehab flippers via list sites</span></label>
+              <label class="todo-item"><input type="checkbox" id="task11" onchange="updateProgress()"><span class="todo-text">Day 11: Dial 30 default foreclosure targets (US hours)</span></label>
+              <label class="todo-item"><input type="checkbox" id="task12" onchange="updateProgress()"><span class="todo-text">Day 12: Dial 30 tax delinquent targets</span></label>
+              <label class="todo-item"><input type="checkbox" id="task13" onchange="updateProgress()"><span class="todo-text">Day 13: Dial 30 probate leads</span></label>
+              <label class="todo-item"><input type="checkbox" id="task14" onchange="updateProgress()"><span class="todo-text">Day 14: Follow up warm leads and run target metrics</span></label>
+              <!-- Days 15-21 -->
+              <label class="todo-item"><input type="checkbox" id="task15" onchange="updateProgress()"><span class="todo-text">Day 15: Run comps & calculate ARV (60% targets)</span></label>
+              <label class="todo-item"><input type="checkbox" id="task16" onchange="updateProgress()"><span class="todo-text">Day 16: Draft and email proposal contracts to sellers</span></label>
+              <label class="todo-item"><input type="checkbox" id="task17" onchange="updateProgress()"><span class="todo-text">Day 17: Follow up on offers and objections</span></label>
+              <label class="todo-item"><input type="checkbox" id="task18" onchange="updateProgress()"><span class="todo-text">Day 18: Secure signed purchase contract virtually</span></label>
+              <label class="todo-item"><input type="checkbox" id="task19" onchange="updateProgress()"><span class="todo-text">Day 19: Open title and escrow files with US agent</span></label>
+              <label class="todo-item"><input type="checkbox" id="task20" onchange="updateProgress()"><span class="todo-text">Day 20: Send US partner to capture photo/video media</span></label>
+              <label class="todo-item"><input type="checkbox" id="task21" onchange="updateProgress()"><span class="todo-text">Day 21: Package deal folder and drive link details</span></label>
+              <!-- Days 22-30 -->
+              <label class="todo-item"><input type="checkbox" id="task22" onchange="updateProgress()"><span class="todo-text">Day 22: Post deal on US Marketplace (Investor Special)</span></label>
+              <label class="todo-item"><input type="checkbox" id="task23" onchange="updateProgress()"><span class="todo-text">Day 23: Direct pitch deal folder to top 10 VIP buyers</span></label>
+              <label class="todo-item"><input type="checkbox" id="task24" onchange="updateProgress()"><span class="todo-text">Day 24: Email/SMS blast general buyer database</span></label>
+              <label class="todo-item"><input type="checkbox" id="task25" onchange="updateProgress()"><span class="todo-text">Day 25: Outreach local flippers on social networks</span></label>
+              <label class="todo-item"><input type="checkbox" id="task26" onchange="updateProgress()"><span class="todo-text">Day 26: US partner hosts competitive walkthrough</span></label>
+              <label class="todo-item"><input type="checkbox" id="task27" onchange="updateProgress()"><span class="todo-text">Day 27: Settle walkthrough offers & select highest bid</span></label>
+              <label class="todo-item"><input type="checkbox" id="task28" onchange="updateProgress()"><span class="todo-text">Day 28: Execute digital assignment contract</span></label>
+              <label class="todo-item"><input type="checkbox" id="task29" onchange="updateProgress()"><span class="todo-text">Day 29: Verify buyer wires non-refundable EMD</span></label>
+              <label class="todo-item"><input type="checkbox" id="task30" onchange="updateProgress()"><span class="todo-text">Day 30: Clear title, close escrow, collect wire fee</span></label>
+            </div>
           </div>
         </div>
 
@@ -789,7 +691,7 @@ Offered by Zion Real Estate & Services.
       });
     }
 
-    const totalTasks = 8;
+    const totalTasks = 30;
     
     function updateProgress() {
       let checkedCount = 0;
@@ -797,9 +699,9 @@ Offered by Zion Real Estate & Services.
         const checkbox = document.getElementById('task' + i);
         if (checkbox.checked) {
           checkedCount++;
-          localStorage.setItem('zion-task-us-' + i, 'true');
+          localStorage.setItem('zion-daily-task-' + i, 'true');
         } else {
-          localStorage.removeItem('zion-task-us-' + i);
+          localStorage.removeItem('zion-daily-task-' + i);
         }
       }
       
@@ -811,8 +713,10 @@ Offered by Zion Real Estate & Services.
     function loadProgress() {
       for (let i = 1; i <= totalTasks; i++) {
         const checkbox = document.getElementById('task' + i);
-        const savedState = localStorage.getItem('zion-task-us-' + i);
-        if (savedState === 'true') {
+        const savedState = localStorage.getItem('zion-daily-task-' + i);
+        if (checkbox.checked) {
+          checkbox.checked = true;
+        } else if (savedState === 'true') {
           checkbox.checked = true;
         }
       }
